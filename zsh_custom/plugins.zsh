@@ -3,6 +3,7 @@ plugins=(
   zsh-autosuggestions
   autoupdate
   git
+  gh
   docker
   docker-compose
   colored-man-pages
