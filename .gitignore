@@ -1,0 +1,8 @@
+.DS_Store
+
+# Binary
+direnv
+
+# JetBrains Toolbox launchers (auto-generated)
+gateway
+idea
