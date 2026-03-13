@@ -1,6 +1,7 @@
 plugins=(
   z
   zsh-autosuggestions
+  autoupdate
   git
   docker
   docker-compose
