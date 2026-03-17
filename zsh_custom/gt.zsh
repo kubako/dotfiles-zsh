@@ -24,6 +24,15 @@ _gt() {
       local site_name="${relative%%/*}"
       cd "$expanded_base/$site_name/temp/logs"
       ;;
+    z|zsh)
+      cd ~/Documents/apps/shell
+      ;;
+    o|documents)
+      cd ~/Documents
+      ;;
+    l|downloads)
+      cd ~/Downloads
+      ;;
     *)
       echo "Usage: gt <alias>"
       echo ""
@@ -32,6 +41,9 @@ _gt() {
       echo "  (w)ebsites   ~/jobs/solidpixels/devstack2/.../sites"
       echo "  (d)evstack2  ~/jobs/solidpixels/devstack2"
       echo "  (a)pplogs    <current_site>/temp/logs"
+      echo "  (z)sh        ~/Documents/apps/shell"
+      echo "  d(o)cuments  ~/Documents"
+      echo "  down(l)oads  ~/Downloads"
       return 1
       ;;
   esac
@@ -44,6 +56,9 @@ _gt_completion() {
     'websites:~/jobs/solidpixels/devstack2/.../sites'
     'devstack2:~/jobs/solidpixels/devstack2'
     'applogs:<current_site>/temp/logs'
+    'zsh:~/Documents/apps/shell'
+    'documents:~/Documents'
+    'downloads:~/Downloads'
   )
   _describe 'target' targets
 }
