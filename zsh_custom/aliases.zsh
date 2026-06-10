@@ -35,3 +35,7 @@ alias cct='_cct'
 alias cctlist='_cctlist'
 alias ccx="claude --dangerously-skip-permissions"
 alias ccd='_ccd'
+alias cc-statusline="bunx -y ccstatusline@latest"
+# ccvps <sandbox> — iTerm control-mode attach to a remote cc-runner sandbox on
+# vps-ai (function in claude-vps.zsh). Fast TAB completion of running sandboxes
+# relies on the vps-ai ControlMaster block in ~/.ssh/config.
